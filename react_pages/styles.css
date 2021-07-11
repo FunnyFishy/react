@@ -1,0 +1,24 @@
+body{
+  background-color: #38caa3;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+div{
+  width:50%;
+  height:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+h1{
+  padding: 100px 100px;
+  background-color: #3e008f;
+  color:#8b76ef;
+  border-radius: 10px;
+}
+span{
+  color: red;
+};

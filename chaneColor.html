@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Change Colour</title>
+</head>
+
+<style>
+
+h3{
+   margin:30px;
+   color:#C0392B;
+   text-align:center;
+   border: 5px inset silver;
+   background-color:#273746;   
+}
+
+body{
+   background-color:#90A4AE;
+}
+#mydiv{
+   height:200px;
+   width:200px;
+   background:white;
+   border-radius:50px;
+}
+#move{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius:50px;
+  position:relative;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  from {left: 500px;}
+  to {right: 20px;}
+}
+
+</style>
+
+<body>
+<h3>Change Color</h3>
+<center><div id="mydiv"></div></center>
+<p>To fill Colour in the Box, Click on the Button.</p><br><br>
+<div style=" width:70%;">           &nbsp;&nbsp;&nbsp;
+<button onclick="fillRed()">RED</button>       &nbsp;&nbsp;&nbsp;
+<button onclick="fillBlue()">BLUE</button>     &nbsp;&nbsp;&nbsp;
+<button onclick="fillBlack()">Black</button>   &nbsp;&nbsp;&nbsp;
+<button onclick="fillGreen()">GREEN</button>   &nbsp;&nbsp;&nbsp;
+<button onclick="fillYellow()">YELLOW</button> &nbsp;&nbsp;&nbsp;
+<button onclick="fillPurple()">VIOLET</button> &nbsp;&nbsp;&nbsp;
+<button onclick="fillGray()">GREY</button>     &nbsp;&nbsp;&nbsp;
+<button onclick="fillBrown()">BROWN</button>   &nbsp;&nbsp;&nbsp;
+<button onclick="fillPink()">PINK</button>     &nbsp;&nbsp;&nbsp;
+<button onclick="fillNo()">REMOVE COLOUR</button></div>&nbsp;
+
+
+<script>
+function fillRed() {document.getElementById("mydiv").style.background="red";}
+function fillBlue(){document.getElementById("mydiv").style.background="blue";}
+function fillBlack(){document.getElementById("mydiv").style.background="black";}
+function fillGreen(){document.getElementById("mydiv").style.background="green";}
+function fillYellow(){document.getElementById("mydiv").style.background="yellow";}
+function fillPurple(){document.getElementById("mydiv").style.background="purple";}
+function fillGray(){document.getElementById("mydiv").style.background="gray";}
+function fillBrown(){document.getElementById("mydiv").style.background="brown";}
+function fillPink(){document.getElementById("mydiv").style.background="deepPink";}
+function fillNo(){document.getElementById("mydiv").style.background="white";}
+
+</script>
+
+<div id="move"></div>
+
+
+</body>
